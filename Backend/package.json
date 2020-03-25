@@ -1,0 +1,32 @@
+{
+  "name": "junior",
+  "version": "0.0.1",
+  "description": "To tentando é isso ai",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/github/junior.git"
+  },
+  "keywords": [
+    "Nao",
+    "sei"
+  ],
+  "author": "Junior Andria",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/github/junior/issues"
+  },
+  "homepage": "https://github.com/github/junior#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "knex": "^0.20.13",
+    "sqlite3": "^4.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
