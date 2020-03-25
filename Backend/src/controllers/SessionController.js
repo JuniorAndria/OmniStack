@@ -1,7 +1,12 @@
+//Conexão com o banco de dados
 const connection = require('../database/connection');
-
-
+//Exportador de módulos
 module.exports = {
+    /**
+     * Retorna uma sessão de usuário
+     * @param {*} request 
+     * @param {*} response 
+     */
     async create(request, response){
         const { id } = request.body;
 

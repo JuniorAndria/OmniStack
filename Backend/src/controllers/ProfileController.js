@@ -1,7 +1,13 @@
+//Conexão com o banco de dados
 const connection = require('../database/connection');
 
-
+//Exportador de módulos
 module.exports = {
+    /**
+     * Retorna todos os casos de determinada ong
+     * @param {*} request 
+     * @param {*} response 
+     */
     async index(request, response){
         const ong_id = request.headers.authorization;
 
