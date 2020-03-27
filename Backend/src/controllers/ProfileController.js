@@ -1,5 +1,5 @@
 //Conexão com o banco de dados
-const connection = require('../database/connection');
+const connection = require('../database/connection')
 
 //Exportador de módulos
 module.exports = {
@@ -9,12 +9,12 @@ module.exports = {
      * @param {*} response 
      */
     async index(request, response){
-        const ong_id = request.headers.authorization;
+        const ong_id = request.headers.authorization
 
         const incidents = await connection('incidents')
         .where('ong_id', ong_id)
-        .select('*');
+        .select('*')
 
-        return response.json(incidents);
+        return response.json(incidents)
     }
 }
