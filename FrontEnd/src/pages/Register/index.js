@@ -19,14 +19,13 @@ export default function Register() {
     async function handleRegister(event) {
         event.preventDefault();
         
-        const data = {
+        const data = {  
             name,
             email,
             whatsapp,
             city,
             uf
         };
-        console.log(data);
         try{
             const response = await api.post('ongs', data);
             alert(`Seu ID de acesso: ${response.data.id}`);
